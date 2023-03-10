@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Admin MrDn | DataTable</title>
+  <title>Admin MrDn | Tabla Clientes</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -54,12 +54,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Listado de Licencias</h1>
+            <h1>Listado de Clientes</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-              <li class="breadcrumb-item active">Listado de Licencias</li>
+              <li class="breadcrumb-item active">Listado de Clientes</li>
             </ol>
           </div>
         </div>
@@ -74,7 +74,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Crear Licencia</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Agregar Cliente</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -87,40 +87,28 @@
               <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingresar email">
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Contraseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingresar contraseña">
+              <label for="exampleInput2">Apellido</label>
+              <input type="text" class="form-control" id="exampleInput1" placeholder="Ingresar Apelido">
             </div>
             <div class="form-group">
-              <label for="exampleInput2">Nombre del taller</label>
-              <input type="text" class="form-control" id="exampleInput1" placeholder="Ingresar Nombre del taller">
-            </div>
+                <label for="exampleInput2">Nombre</label>
+                <input type="text" class="form-control" id="exampleInput1" placeholder="Ingresar Nombre">
+              </div>
+              <div class="form-group">
+                <label for="exampleInput51">DNI</label>
+                <input type="number" class="form-control" id="exampleInput" placeholder="Ingresar DNI">
+              </div>
             <div class="form-group">
               <label for="exampleInput3">Dirección</label>
-              <input type="text" class="form-control" id="exampleInput1" placeholder="Ingresar dirección">
+              <input type="text" class="form-control" id="exampleInput1" placeholder="Ingresar Dirección">
             </div>
             <div class="form-group">
-              <label for="exampleInput4">CUIT</label>
-              <input type="number" class="form-control" id="exampleInput1" placeholder="Ingresar CUIT">
+              <label for="exampleInput51">Teléfono</label>
+              <input type="number" class="form-control" id="exampleInput" placeholder="Ingresar Teléfono">
             </div>
             <div class="form-group">
-              <label for="exampleInput51">Razón social</label>
-              <input type="text" class="form-control" id="exampleInput1" placeholder="Ingresar condición IVA">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputFile">Agregar archivo</label>
-              <div class="input-group">
-                <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="exampleInputFile">
-                  <label class="custom-file-label" for="exampleInputFile">Seleccionar archivo</label>
-                </div>
-                <div class="input-group-append">
-                  <span class="input-group-text">Subir</span>
-                </div>
-              </div>
-            </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Validar</label>
+                <label for="exampleInput3">Patente</label>
+                <input type="text" class="form-control" id="exampleInput1" placeholder="Ingresar Patente">
             </div>
           </div>
           <!-- /.card-body -->
@@ -149,18 +137,26 @@
           <table id="example1" class="table table-bordered table-striped">
             <thead>
             <tr>
-                <th>Nombre del Taller</th>
+                <th>E-mail</th>
+                <th>Apellido</th>
                 <th>Nombre</th>
-                <th>Contacto</th>
+                <th>DNI</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
+                <th>Patente</th>
                 <th>Estado</th>
                 <th>Acción</th>
             </tr>
             </thead>
             <tbody>
             <tr>
+                <td>aaaaa@hshhssh</td>
                 <td>aaaaa</td>
                 <td>abc</td>
+                <td>34151234</td>
+                <td>abc12</td>
                 <td>3415123456</td>
+                <td>abc123</td>
                 <td>act/inact</td>
                 <td>
                     <a class="desactivarmiri"><i class="fa fa-solid fa-eye"></i></a>
@@ -172,9 +168,13 @@
             </tbody>
             <tfoot>
             <tr>
-                <th>Nombre del Taller</th>
+                <th>E-mail</th>
+                <th>Apellido</th>
                 <th>Nombre</th>
-                <th>Contacto</th>
+                <th>DNI</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
+                <th>Patente</th>
                 <th>Estado</th>
                 <th>Acción</th>
             </tr>

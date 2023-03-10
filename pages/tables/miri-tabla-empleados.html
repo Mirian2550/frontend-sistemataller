@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Admin MrDn | DataTable</title>
+  <title>Admin MrDn | Tabla Empleados</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -54,12 +54,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Listado de Licencias</h1>
+            <h1>Listado de Empleados</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-              <li class="breadcrumb-item active">Listado de Licencias</li>
+              <li class="breadcrumb-item active">Listado de Empleados</li>
             </ol>
           </div>
         </div>
@@ -74,7 +74,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Crear Licencia</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Agregar Empleado</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -91,23 +91,27 @@
               <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingresar contraseña">
             </div>
             <div class="form-group">
-              <label for="exampleInput2">Nombre del taller</label>
-              <input type="text" class="form-control" id="exampleInput1" placeholder="Ingresar Nombre del taller">
+              <label for="exampleInput2">Apellido</label>
+              <input type="text" class="form-control" id="exampleInput1" placeholder="Ingresar Apelido">
             </div>
+            <div class="form-group">
+                <label for="exampleInput2">Nombre</label>
+                <input type="text" class="form-control" id="exampleInput1" placeholder="Ingresar Nombre">
+              </div>
             <div class="form-group">
               <label for="exampleInput3">Dirección</label>
               <input type="text" class="form-control" id="exampleInput1" placeholder="Ingresar dirección">
             </div>
             <div class="form-group">
-              <label for="exampleInput4">CUIT</label>
-              <input type="number" class="form-control" id="exampleInput1" placeholder="Ingresar CUIT">
+              <label for="exampleInput4">CUIL</label>
+              <input type="number" class="form-control" id="exampleInput1" placeholder="Ingresar CUIL">
             </div>
             <div class="form-group">
-              <label for="exampleInput51">Razón social</label>
-              <input type="text" class="form-control" id="exampleInput1" placeholder="Ingresar condición IVA">
+              <label for="exampleInput51">Teléfono</label>
+              <input type="number" class="form-control" id="exampleInput" placeholder="Ingresar Teléfono">
             </div>
             <div class="form-group">
-              <label for="exampleInputFile">Agregar archivo</label>
+              <label for="exampleInputFile">Agregar Foto DNI</label>
               <div class="input-group">
                 <div class="custom-file">
                   <input type="file" class="custom-file-input" id="exampleInputFile">
@@ -149,9 +153,9 @@
           <table id="example1" class="table table-bordered table-striped">
             <thead>
             <tr>
-                <th>Nombre del Taller</th>
+                <th>Apellido</th>
                 <th>Nombre</th>
-                <th>Contacto</th>
+                <th>Teléfono</th>
                 <th>Estado</th>
                 <th>Acción</th>
             </tr>
@@ -172,9 +176,9 @@
             </tbody>
             <tfoot>
             <tr>
-                <th>Nombre del Taller</th>
+                <th>Apellido</th>
                 <th>Nombre</th>
-                <th>Contacto</th>
+                <th>Teléfono</th>
                 <th>Estado</th>
                 <th>Acción</th>
             </tr>

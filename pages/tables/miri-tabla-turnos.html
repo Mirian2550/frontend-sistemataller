@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Admin MrDn | DataTable</title>
+  <title>Admin MrDn | Tabla Turnos</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -54,12 +54,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Listado de Licencias</h1>
+            <h1>Listado de Turnos</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-              <li class="breadcrumb-item active">Listado de Licencias</li>
+              <li class="breadcrumb-item active">Listado de Turnos</li>
             </ol>
           </div>
         </div>
@@ -74,60 +74,56 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Crear Licencia</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Agregar Turno</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <form>
-          <div class="card-body">
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingresar email">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Contraseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingresar contraseña">
-            </div>
-            <div class="form-group">
-              <label for="exampleInput2">Nombre del taller</label>
-              <input type="text" class="form-control" id="exampleInput1" placeholder="Ingresar Nombre del taller">
-            </div>
-            <div class="form-group">
-              <label for="exampleInput3">Dirección</label>
-              <input type="text" class="form-control" id="exampleInput1" placeholder="Ingresar dirección">
-            </div>
-            <div class="form-group">
-              <label for="exampleInput4">CUIT</label>
-              <input type="number" class="form-control" id="exampleInput1" placeholder="Ingresar CUIT">
-            </div>
-            <div class="form-group">
-              <label for="exampleInput51">Razón social</label>
-              <input type="text" class="form-control" id="exampleInput1" placeholder="Ingresar condición IVA">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputFile">Agregar archivo</label>
-              <div class="input-group">
-                <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="exampleInputFile">
-                  <label class="custom-file-label" for="exampleInputFile">Seleccionar archivo</label>
-                </div>
-                <div class="input-group-append">
-                  <span class="input-group-text">Subir</span>
+          <form action="../../index3.html" method="post">
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Cliente">
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <span class="fas fa-users"></span>
                 </div>
               </div>
             </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Validar</label>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Vehículo">
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <span class="fas fa-id-card"></span>
+                </div>
+              </div>
             </div>
-          </div>
-          <!-- /.card-body -->
-
-          <div class="card-footer">
-            <button type="submit" class="btn btn-primary">Cargar</button>
-          </div>
+            <div class="input-group mb-3">
+              <input type="number" class="form-control" placeholder="Teléfono">
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <span class="fas fa-id-card"></span>
+                </div>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="date" class="form-control" placeholder="Fecha">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-calendar-alt"></span>
+                  </div>
+                </div>
+              </div>
+            <div class="input-group mb-3">
+                <input type="time" class="form-control" placeholder="Horario">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-clock"></span>
+                  </div>
+                </div>
+              </div>
+            <div class="row">
+            </div>
+          </form>
         </form>
       </div>
       <div class="modal-footer">
@@ -149,9 +145,11 @@
           <table id="example1" class="table table-bordered table-striped">
             <thead>
             <tr>
-                <th>Nombre del Taller</th>
-                <th>Nombre</th>
-                <th>Contacto</th>
+                <th>Ciente</th>
+                <th>Vehículo</th>
+                <th>Teléfono</th>
+                <th>Día</th>
+                <th>Hora</th>
                 <th>Estado</th>
                 <th>Acción</th>
             </tr>
@@ -159,24 +157,28 @@
             <tbody>
             <tr>
                 <td>aaaaa</td>
-                <td>abc</td>
+                <td>abc123</td>
                 <td>3415123456</td>
+                <td>25/5/23</td>
+                <td>12:30</td>
                 <td>act/inact</td>
                 <td>
                     <a class="desactivarmiri"><i class="fa fa-solid fa-eye"></i></a>
                     <!--<a><i class="fa fa-solid fa-eye-slash"></i></a>-->
-                    <a href="../forms/miri-form-general.html"><i class="fas fa-pencil-alt"></i></a>
+                    <a href="../tables/miri-tabla-turnos.html"><i class="fas fa-pencil-alt"></i></a>
                     <a class="borrarmiri"><i class="fas fa-trash-alt"></i></a>
                 </td>
             </tr>
             </tbody>
             <tfoot>
             <tr>
-                <th>Nombre del Taller</th>
-                <th>Nombre</th>
-                <th>Contacto</th>
-                <th>Estado</th>
-                <th>Acción</th>
+              <th>Ciente</th>
+              <th>Vehículo</th>
+              <th>Teléfono</th>
+              <th>Día</th>
+              <th>Hora</th>
+              <th>Estado</th>
+              <th>Acción</th>
             </tr>
             </tfoot>
           </table>
